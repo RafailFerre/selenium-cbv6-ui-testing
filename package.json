@@ -4,9 +4,21 @@
   "description": "UI tests for simple CRM project CBv6 using Selenium",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.4.1",
+    "chromedriver": "^126.0.4",
+    "mocha": "^10.6.0",
+    "selenium-webdriver": "^4.22.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.8",
+    "@babel/preset-env": "^7.24.8",
+    "@babel/register": "^7.24.6",
+    "prettier": "^3.3.3"
+  }
 }
