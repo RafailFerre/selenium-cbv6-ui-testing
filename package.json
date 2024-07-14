@@ -12,6 +12,7 @@
   "dependencies": {
     "chai": "^4.4.1",
     "chromedriver": "^126.0.4",
+    "dotenv": "^16.4.5",
     "mocha": "^10.6.0",
     "selenium-webdriver": "^4.22.0"
   },
