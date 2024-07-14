@@ -7,7 +7,7 @@
     "test": "mocha"
   },
   "keywords": [],
-  "author": "",
+  "author": "Rafail Ferre",
   "license": "ISC",
   "dependencies": {
     "chai": "^4.4.1",
