@@ -1,6 +1,7 @@
 import { Builder, By, until } from 'selenium-webdriver'
 import { Options } from 'selenium-webdriver/chrome'
 import { expect } from 'chai'
+require('dotenv').config()
 
 describe('AUTHENTICATION & AUTHORIZATION', function () {
   this.timeout(30000)
@@ -15,10 +16,10 @@ describe('AUTHENTICATION & AUTHORIZATION', function () {
   //   });
 
   it('should login successfully', async function () {
-    await driver.get('https://clientbase.pasv.us/v6/user/login')
+    await driver.get(`${process.env.BASE_URL}/user/login`)
 
-    await driver.findElement(By.name('email')).sendKeys('test@gmail.com')
-    await driver.findElement(By.name('password')).sendKeys('12345')
+    await driver.findElement(By.name('email')).sendKeys(process.env.EMAIL)
+    await driver.findElement(By.name('password')).sendKeys(process.env.PASSWORD)
     await driver.findElement(By.className('btn-sign btn btn-primary')).click()
 
     await driver.wait(until.elementLocated(By.className('dropdown-toggle nav-link')), 10000)
