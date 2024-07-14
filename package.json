@@ -1,0 +1,12 @@
+{
+  "name": "selenium-cbv6-ui-testing",
+  "version": "1.0.0",
+  "description": "UI tests for simple CRM project CBv6 using Selenium",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
