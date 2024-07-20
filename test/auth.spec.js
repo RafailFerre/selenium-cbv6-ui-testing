@@ -25,5 +25,8 @@ describe('AUTHENTICATION & AUTHORIZATION', function () {
     await driver.wait(until.elementLocated(By.className('dropdown-toggle nav-link')), 10000)
     let userName = await driver.findElement(By.className('dropdown-toggle nav-link')).getText()
     expect(userName.includes('Test Test'))
+
+    await driver.findElement(By.className('dropdown-toggle nav-link')).click()
+    await driver.findElement(By.css('[data-qa="logout"]')).click()
   })
 })
